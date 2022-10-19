@@ -9,6 +9,10 @@ public class UnitConversion
         double volume, time, pressure, power, energy;
 
         Scanner userinput = new Scanner(System.in);
+
+        String YELLOW = "\u001B[33m";
+        String WHITE = "\u001B[0m";
+        String RED = "\u001B[31m";
         
         System.out.println("--- Unit Conversion Program ---");
         System.out.print(
@@ -140,7 +144,7 @@ public class UnitConversion
                 "Type 4 for Gallon -> Ounces\n"+
                 "Type 5 for Quart -> Pints\n"+
                 "Type 6 for Cup -> Ounces\n"+
-                "Yur choice is ");
+                "Your choice is ");
             int volumechoice = userinput.nextInt();
             System.out.print("Value input: ");
             volume = userinput.nextDouble();
