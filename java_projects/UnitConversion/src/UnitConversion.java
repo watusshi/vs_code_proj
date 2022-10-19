@@ -136,6 +136,10 @@ public class UnitConversion
             System.out.print("\nVolume Conversion\n"+
                 "Type 1 for Liter -> Gallon\n"+
                 "Type 2 for Liter -> Quart\n"+
+                "Type 3 for Gallon -> Quart\n"+
+                "Type 4 for Gallon -> Ounces\n"+
+                "Type 5 for Quart -> Pints\n"+
+                "Type 6 for Cup -> Ounces\n"+
                 "Yur choice is ");
             int volumechoice = userinput.nextInt();
             System.out.print("Value input: ");
@@ -144,6 +148,10 @@ public class UnitConversion
             {
                 case 1: answer = volume * 0.264;
                 case 2: answer = volume * 1.057;
+                case 3: answer = volume * 4;
+                case 4: answer = volume * 128;
+                case 5: answer = volume * 2;
+                case 6: answer = volume * 8;
             }
         }
         System.out.println("Answer: "+answer);
