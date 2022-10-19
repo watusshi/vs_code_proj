@@ -122,7 +122,7 @@ public class UnitConversion
                 "Type 4 for Celsius -> Kelvin\n"+
                 "Type 5 for Kelvin -> Celsius\n"+
                 "Type 6 for Kelvin -> Farenheit\n\n"+
-                "Your choice is ");
+                YELLOW+"Your choice is ");
             int tempchoice = userinput.nextInt();
             System.out.print("Value input: ");
             temp = userinput.nextDouble();
@@ -144,7 +144,7 @@ public class UnitConversion
                 "Type 4 for Gallon -> Ounces\n"+
                 "Type 5 for Quart -> Pints\n"+
                 "Type 6 for Cup -> Ounces\n"+
-                "Your choice is ");
+                YELLOW+"Your choice is ");
             int volumechoice = userinput.nextInt();
             System.out.print("Value input: ");
             volume = userinput.nextDouble();
@@ -158,6 +158,6 @@ public class UnitConversion
                 case 6: answer = volume * 8;
             }
         }
-        System.out.println("Answer: "+answer);
+        System.out.println("Answer: "+answer+WHITE);
     }
 }
